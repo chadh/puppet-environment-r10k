@@ -1,8 +1,10 @@
 forge "http://forge.puppetlabs.com"
 
-mod "puppetlabs/stdlib"
 mod "puppetlabs/firewall"
-mod "puppetlabs/vcsrepo"
-mod "puppetlabs/git"
-mod "puppetlabs/inifile"
 
+mod 'profiles',
+  :git => 'ssh://git@github.gatech.edu/tso-research/puppet-module-profiles-r10k.git',
+  :branch => 'firewall'
+mod 'ccfirewall',
+  :git => 'ssh://git@github.gatech.edu/tso-research/puppet-module-ccfirewall.git',
+  :branch => 'master'
